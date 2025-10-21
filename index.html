@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Autobiography — Melvin Dungog</title>
+  <style>
+    :root{--accent:#0b6efd;--bg:#f7f9fc;--card:#ffffff;--text:#1f2937}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,var(--bg),#eef4ff);color:var(--text);line-height:1.5}
+    .container{max-width:900px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{flex:0 0 160px;height:160px;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(11,110,253,0.12);border:6px solid rgba(255,255,255,0.6)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:1.8rem;margin:0}
+    .meta{color:#374151;margin-top:6px}
+    .card{background:var(--card);border-radius:14px;padding:20px;margin-top:20px;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
+    .section{margin-bottom:18px}
+    h2{font-size:1.15rem;margin:0 0 8px 0;color:var(--accent)}
+    p{margin:0 0 10px 0}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media(max-width:720px){.two-col{grid-template-columns:1fr}.avatar{height:120px;width:120px}}
+    .actions{display:flex;gap:10px;margin-top:10px}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid rgba(11,110,253,0.12)}
+    footer{margin-top:18px;text-align:center;color:#6b7280;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="32d9d8ba-aa18-47df-86d1-679e9011336b.jpg" alt="Photo of Melvin Dungog" />
+      </div>
+      <div>
+        <h1>Melvin Dungog</h1>
+        <div class="meta">Born October 14, 2006 — Lapu-Lapu City, Cebu, Philippines</div>
+        <div class="meta">Student — Bachelor of Industrial Technology (BindTech 1A), Lapu-Lapu City College</div>
+        <div class="actions">
+          <a class="btn" href="#about">Read My Story</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="card" id="about">
+        <section class="section">
+          <h2>Introduction</h2>
+          <p>My name is <strong>Melvin Dungog</strong>. I was born and raised in Lapu-Lapu City. I grew up in a simple and loving family that taught me to be respectful, humble, and hardworking. I wrote this to share the lessons I’ve learned so far and the things that matter to me.</p>
+        </section>
+
+        <section class="section two-col">
+          <div>
+            <h2>Early Life &amp; Childhood</h2>
+            <p>I went to <strong>Mactan Elementary School</strong>. One of my favorite memories from elementary school was joining a dance presentation for Foundation Day. I was nervous at first, but I learned how to work with my classmates and gained more confidence.</p>
+            <p>My childhood was simple but full of laughter, learning, and family time. These early years taught me to value friendship, respect, and curiosity.</p>
+          </div>
+          <div>
+            <h2>High School</h2>
+            <p>I studied at <strong>Mactan National High School</strong>. During those years I discovered that I really like <strong>Science</strong> and <strong>English</strong>. Science made me curious about how things work, while English helped me express my ideas better. High school helped me become more responsible and set goals for the future.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>College Life</h2>
+          <p>Right now, I’m studying at <strong>Lapu-Lapu City College</strong> taking <strong>Bachelor of Industrial Technology (BindTech 1A)</strong>. College life is different and more challenging, but I’m learning important skills that will help me in my career. It also taught me how to manage my time and be independent.</p>
+        </section>
+
+        <section class="section">
+          <h2>Personal Growth &amp; Lessons</h2>
+          <p>I’ve learned that mistakes are part of learning. I try to stay humble and keep working hard. My motto is: <em>"Keep learning, stay humble, and never give up."</em></p>
+        </section>
+
+        <section class="section">
+          <h2>Hopes &amp; Dreams</h2>
+          <p>I dream of becoming a skilled professional in industrial technology and using my skills to help my family and community. I want to show others that with effort and patience, they can reach their goals too.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Melvin Dungog — Autobiography
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
